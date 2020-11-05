@@ -1,5 +1,7 @@
 import time
 
+#Opcion 1
+
 lista = [] 
 numero = 2
 while numero <=500: 
@@ -24,6 +26,8 @@ while multiplo <= 25:
 print(lista)
 print(len(lista))
 
+
+#Opcion 2
 lista_ciclo = list(range(2, 501))
 lista_ciclo_2 = list(range(2, 26))
 for j in lista_ciclo_2:
@@ -33,19 +37,3 @@ for j in lista_ciclo_2:
 print(lista_ciclo)
 print(len(lista_ciclo))
 
-''''
-def is_prime(num):
-    """Returns True if the number is prime
-    else False."""
-    if num == 0 or num == 1:
-        return False
-    for x in range(2, num):
-        if num % x == 0:
-            return False
-    else:
-        return True
-
-for num in range(28,500):
-    if is_prime(num) == True:
-        print(num)
-'''
