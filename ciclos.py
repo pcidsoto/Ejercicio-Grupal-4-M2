@@ -24,8 +24,14 @@ while multiplo <= 25:
 print(lista)
 print(len(lista))
 
-
-
+lista_ciclo = list(range(2, 501))
+lista_ciclo_2 = list(range(2, 26))
+for j in lista_ciclo_2:
+    for i in lista_ciclo:
+        if i%j == 0 and i!=2:
+            lista_ciclo.remove(i)
+print(lista_ciclo)
+print(len(lista_ciclo))
 
 ''''
 def is_prime(num):
