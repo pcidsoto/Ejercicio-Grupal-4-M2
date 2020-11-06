@@ -1,5 +1,17 @@
 import time
 
+numero_nuevo = 0
+lista_numeros = []
+while len(lista_numeros) < 15:
+    numero_nuevo = int(input("Ingrese un número para agregar a la lista: "))
+    if numero_nuevo not in lista_numeros:
+        lista_numeros.append(numero_nuevo)
+    else:
+        print("Error, el número fue ingresado")
+print("La lista tiene los siguientes valores: ", lista_numeros)
+
+#Opcion 1
+
 lista = [] 
 numero = 2
 while numero <=500: 
@@ -8,7 +20,7 @@ while numero <=500:
 print(lista)
 
 
-#Alternativa con ciclo while
+
 multiplo = 2
 while multiplo <= 25:
     print("Multiplo de: ", multiplo)
@@ -24,8 +36,8 @@ while multiplo <= 25:
 print(lista)
 print(len(lista))
 
-#Otra alternativa con ciclo for
 
+#Opcion 2
 lista_ciclo = list(range(2, 501))
 lista_ciclo_2 = list(range(2, 26))
 for j in lista_ciclo_2:
@@ -34,20 +46,3 @@ for j in lista_ciclo_2:
             lista_ciclo.remove(i)
 print(lista_ciclo)
 print(len(lista_ciclo))
-
-''''
-def is_prime(num):
-    """Returns True if the number is prime
-    else False."""
-    if num == 0 or num == 1:
-        return False
-    for x in range(2, num):
-        if num % x == 0:
-            return False
-    else:
-        return True
-
-for num in range(28,500):
-    if is_prime(num) == True:
-        print(num)
-'''
